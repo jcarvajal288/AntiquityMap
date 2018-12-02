@@ -10,11 +10,17 @@ public class HexGrid : MonoBehaviour {
     public Text cellLabelPrefab;
 
     Canvas gridCanvas;
-
     HexCell[] cells;
+    HexMesh hexMesh;
+
+    void Start()
+    {
+        hexMesh.Triangulate(cells);
+    }
 
     void Awake() {
         gridCanvas = GetComponentInChildren<Canvas>();
+        hexMesh = GetComponentInChildren<HexMesh>();
         cells = new HexCell[height * width];
 
 		for(int z=0, i=0; z<height; z++) 

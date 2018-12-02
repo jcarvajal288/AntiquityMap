@@ -4,6 +4,13 @@ public class HexCoordinates : MonoBehaviour {
 
     public int X { get; private set; }
     public int Z { get; private set; }
+    public int Y
+    {
+        get
+        {
+            return -X - Z;
+        }
+    }
 
     public HexCoordinates(int x, int z)
     {
@@ -18,11 +25,11 @@ public class HexCoordinates : MonoBehaviour {
 
     public override string ToString()
     {
-        return "(" + X.ToString() + ", " + Z.ToString() + ")";
+        return "(" + X.ToString() + ", " + Y.ToString() + ", " + Z.ToString() + ")";
     }
 
     public string ToStringOnSeparateLines()
     {
-        return X.ToString() + "\n" + Z.ToString();
+        return X.ToString() + "\n" + Y.ToString() + "\n" + Z.ToString();
     }
 }

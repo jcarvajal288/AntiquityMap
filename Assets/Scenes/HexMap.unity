@@ -236,7 +236,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9caf902a12f0d43dbb3dbab161da77d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -307,6 +307,8 @@ MonoBehaviour:
     type: 2}
   cellLabelPrefab: {fileID: 114657686173839574, guid: 79df7e1a7960a4ea18db8a884b1554da,
     type: 2}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  touchedColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!4 &1297231596
 Transform:
   m_ObjectHideFlags: 0

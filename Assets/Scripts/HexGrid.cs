@@ -20,6 +20,7 @@ public class HexGrid : MonoBehaviour
     void Start()
     {
         hexMesh.Triangulate(cells);
+        new MapGenerator().Generate(2);
     }
 
     void Update() {

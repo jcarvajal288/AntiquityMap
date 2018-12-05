@@ -1,12 +1,34 @@
 {
-    "A":  "wffpffpfwfwmppffwwffFfpfmmffffFmpwpwffffppfffpffffpfmmpppfwpp",
-    "A2": "mmppmmmfmFfppfMffpffffffwwffppmffpfffffwwpppwfwwffpffpfppfmmp",
-    "B":  "fmmMwfmffmfpffwpmmmffffwffpffpwpmmMpppfwwwwfffppffffwppfffppf",
-    "B2": "pwwppppwfwfmpffppppfffwffmMmmmfffwppPffpfffmmppfffmmfffwwwwpp",
-    "C":  "ffpwwfFwppfwppwffffwffppfFpfpwwfffppwfwfmmpfffffffppffffppppw",
-    "C2": "fffmmfwfwfmmfMmmwpfPfwwfmmfmmmmppwpwpppffffmmffffmmffffppfppp",
-    "D":  "mMmpmmwmmpffmmffwffmfpfffmmppwwFfppwwpfffwfffpmpppwffffpppppm",
-    "D2": "ffwffppffwffffffpffmwwffmMmfpfmffwFffmpfffpfmffppffmffwwfffmm",
-    "E":  "mmmppmmpffmFfppfMffffffffffwwffppmffpfmmpffwwpppwfwwffpffpfpp",
-    "E2": "wfpffpffwmppffwwffwpfmmffffFmpwpwpfFfpfffpffffpfmmpppfwppfffp"
+    "Items": [
+        {
+            "name": "A",
+            "front":  "wffpffpfwfwmppffwwffFfpfmmffffFmpwpwffffppfffpffffpfmmpppfwpp",
+            "back": "mmppmmmfmFfppfMffpffffffwwffppmffpfffffwwpppwfwwffpffpfppfmmp",
+            "count": 4
+        },
+        {
+            "name": "B",
+            "front":  "fmmMwfmffmfpffwpmmmffffwffpffpwpmmMpppfwwwwfffppffffwppfffppf",
+            "back": "pwwppppwfwfmpffppppfffwffmMmmmfffwppPffpfffmmppfffmmfffwwwwpp",
+            "count": 4
+        },
+        {
+            "name": "C",
+            "front":  "ffpwwfFwppfwppwffffwffppfFpfpwwfffppwfwfmmpfffffffppffffppppw",
+            "back": "fffmmfwfwfmmfMmmwpfPfwwfmmfmmmmppwpwpppffffmmffffmmffffppfppp",
+            "count": 4
+        },
+        {
+            "name": "D",
+            "front":  "mMmpmmwmmpffmmffwffmfpfffmmppwwFfppwwpfffwfffpmpppwffffpppppm",
+            "back": "ffwffppffwffffffpffmwwffmMmfpfmffwFffmpfffpfmffppffmffwwfffmm",
+            "count": 4
+        },
+        {
+            "name": "E",
+            "front":  "mmmppmmpffmFfppfMffffffffffwwffppmffpfmmpffwwpppwfwwffpffpfpp",
+            "back": "wfpffpffwmppffwwffwpfmmffffFmpwpwpfFfpfffpffffpfmmpppfwppfffp",
+            "count": 4
+        }
+    ]
 }

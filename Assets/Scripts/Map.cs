@@ -15,51 +15,51 @@ public class Map {
 		}
 	}
 
-	private HexTile[] hexTiles;
+	private TerrainTile[] hexTiles;
 
-	public HexTile NorthWestTile {
+	public TerrainTile NorthWestTile {
 		get {
 			return hexTiles[0];
 		}
 	}
 	
-	public HexTile NorthTile {
+	public TerrainTile NorthTile {
 		get {
 			return hexTiles[1];
 		}
 	}
 	
-	public HexTile NorthEastTile {
+	public TerrainTile NorthEastTile {
 		get {
 			return hexTiles[2];
 		}
 	}
 	
-	public HexTile WestTile {
+	public TerrainTile WestTile {
 		get {
 			return hexTiles[3];
 		}
 	}
 	
-	public HexTile EastTile {
+	public TerrainTile EastTile {
 		get {
 			return hexTiles[4];
 		}
 	}
 	
-	public HexTile SouthWestTile {
+	public TerrainTile SouthWestTile {
 		get {
 			return hexTiles[5];
 		}
 	}
 	
-	public HexTile SouthTile {
+	public TerrainTile SouthTile {
 		get {
 			return hexTiles[6];
 		}
 	}
 	
-	public HexTile SouthEastTile {
+	public TerrainTile SouthEastTile {
 		get {
 			return hexTiles[7];
 		}

@@ -20,7 +20,8 @@ public class HexGrid : MonoBehaviour
     void Start()
     {
         hexMesh.Triangulate(cells);
-        new MapGenerator().Generate(2);
+        MapGenerator mapGenerator = new MapGenerator(this, 2);
+        mapGenerator.Generate();
     }
 
     void Update() {
@@ -40,11 +41,21 @@ public class HexGrid : MonoBehaviour
     void TouchCell(Vector3 position) {
         position = transform.InverseTransformPoint(position);
         HexCoordinates coordinates = HexCoordinates.FromPosition(position);
-        Debug.Log("touched at " + position);
         int index = coordinates.X + coordinates.Z * width + coordinates.Z / 2;
         HexCell cell = cells[index];
         cell.color = touchedColor;
         hexMesh.Triangulate(cells);
+    }
+
+    public HexCell getCellForPosition(Vector3 position) {
+        HexCoordinates coordinates = HexCoordinates.FromPosition(position);
+        int index = coordinates.X + coordinates.Z * width + coordinates.Z / 2;
+        Debug.Log("touched cell " + index);
+        return cells[index];
+    }
+
+    public void SetTerrain(Vector3 position, HexCell.TerrainType terrain) {
+        getCellForPosition(position).SetTerrain(terrain);
     }
 
     void Awake() {
